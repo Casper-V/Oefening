@@ -72,6 +72,7 @@ def naam(voornaam='', achternaam='', tweede_voornaam=''):
 
 
 # def make_album(artist, album_title, n_tracks):
+#     """returns a dictionary containing one album and info on that album"""
 #     album_info = {"Artist":artist, "Album title":album_title, "Number of tracks":n_tracks}
 #     print(album_info)
 
@@ -79,9 +80,71 @@ def naam(voornaam='', achternaam='', tweede_voornaam=''):
 # for album in album_list:
 #         make_album(album[0],album[1],album[2])
 
-def begroet_gast(namen):
-    for naam in namen:
-        print(f"Welkom, {naam.title()}!")
 
-gastenlijst = ['boris', 'fanny', 'jimmy', 'alexander']
-begroet_gast(gastenlijst)
+# def begroet_gast(namen):
+#     """"prints a separate line of greeting for for each guest included in the inputed list"""
+#     for naam in namen:
+#         print(f"Welkom, {naam.title()}!")
+
+# gastenlijst = ['boris', 'fanny', 'jimmy', 'alexander']
+# begroet_gast(gastenlijst)
+
+
+# def pizzas(ordered, ready_to_serve):
+#     """Will move pizza orders from the ordered list to the ready_to_serve list
+#     after instruction the kitchen which pizzas to make"""
+#     while ordered:
+#         current_pizza = ordered.pop()
+#         ready_to_serve.append(current_pizza)
+#         print(f"The customers has ordered a {current_pizza}.")
+
+# def ready(ready_to_serve):
+#     """"Will print an overview of the pizzas that are ready to serve"""
+#     for pizza in ready_to_serve:
+#         print(f"The following is ready to serve: {pizza}")
+
+# ordered = ['margarita', 'quattro_staggioni', 'salami', 'seafood', 'pineapple']
+# ready_to_serve = []
+
+# pizzas(ordered[:], ready_to_serve)
+# ready(ready_to_serve)
+# print(ordered)
+
+# Eerst wordt een willekeurige routebeschrijving weergegeven als lijst
+# route = ['rechtdoor', 'rechtsaf', 'na 50 meter schuin naar links', 'bij het stoplicht rechtsaf', 'linksaf']
+
+# def toon_richting(richtingen):
+#     """"De eerste richtingaanwijzing van de route wordt apart beschreven.
+#     Dan komen de resterende richtingaanwijzingen.
+#     Tot slot een laatse aanwijzing."""
+#     eerste_richtingaanwijzing = route[0]
+#     overige_richtingaanwijzingen = route[1:-1]
+#     laatste_richtingaanwijzing = route[-1]
+#     print(f"Eerst ga je {eerste_richtingaanwijzing}.")
+#     for richting in overige_richtingaanwijzingen:
+#         print(f"Vervolgens ga je {richting}.")
+#     print(f"Tot slot ga ja {laatste_richtingaanwijzing}. Je hebt je bestemming bereikt.")
+
+# toon_richting(route)
+
+# route2 = route[:]
+
+# def broodje_beleggen(grootte, *broodbeleg):
+#     print(broodbeleg)
+#     print(f"Je hebt een {grootte} broodje besteld met:")
+#     for beleg in broodbeleg:
+#         print(f"- {beleg}")
+
+# broodje_beleggen('middelgroot', 'zwitserse kaas', 'tomaat', 'roomboter')
+# broodje_beleggen('klein', 'ei')
+
+# def profiel_maken(voornaam, achternaam, **info):
+#     """Een dictionary maken met alle info die over een gebruiker bekend is"""
+#     info['voornaam'] = voornaam
+#     info['achternaam'] =  achternaam
+#     return info
+
+# gebruikersprofiel1 = profiel_maken('tom', 'petty', occupation='musician', alive='no')
+# gebruikersprofiel2 = profiel_maken('tom', 'cruise', occupation='actor', alive='yes', famous_for=['top gun', 'misscion impossible'])
+# print(gebruikersprofiel1)
+# print(gebruikersprofiel2)
