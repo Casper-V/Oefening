@@ -22,7 +22,6 @@ def unieke_woorden_tellen(bestandsnaam, woord):
 
 
 
-
 # # voorbeeld1
 # bestandsnaam = 'python_text.txt'
 # woorden_tellen(bestandsnaam)
