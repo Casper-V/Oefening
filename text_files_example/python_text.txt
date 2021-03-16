@@ -1,0 +1,3 @@
+In Python you can create variables.
+You can assign values to these variables.
+This is just one of the many uses of Python.

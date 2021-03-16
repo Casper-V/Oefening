@@ -1,0 +1,4 @@
+Hello there!
+Welcome to the new file.
+Your code is: 9876543210
+Don't forget to keep your code safe.
